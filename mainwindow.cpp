@@ -46,8 +46,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     void MainWindow::createUI() {
         ui->tableView->setModel(model);
-        ui->tableView->setColumnHidden(0, true);    // Hide the column id Records
-        ui->tableView->setColumnHidden(1, true);
+        ui->tableView->setColumnHidden(1, true);    // Hide the column id Records
         ui->tableView->setColumnHidden(2, true);    // Hide the column with image
         ui->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
         ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection);
@@ -58,8 +57,7 @@ MainWindow::MainWindow(QWidget *parent)
         /* Connect the signal to change the selection of the current row in the table
         * to the slot to set the image picLabel
         * */
-        connect(ui->tableView->selectionModel(), SIGNAL(currentRowChanged(QModelIndex,QModelIndex)),
-                    this, SLOT(slotCurrentPic(QModelIndex)));
+        connect(ui->tableView->selectionModel(), SIGNAL(currentRowChanged(QModelIndex,QModelIndex)), this, SLOT(slotCurrentPic(QModelIndex)));
 
         model->select();
     }

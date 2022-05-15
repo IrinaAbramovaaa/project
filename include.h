@@ -11,5 +11,6 @@
 #include <QQuickItem>
 #include <QSharedDataPointer>
 #include <QWidget>
+#include <QPixmap>
 
 #endif // INCLUDE_H

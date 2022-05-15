@@ -2,12 +2,15 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>804</width>
-    <height>560</height>
+    <width>1000</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,7 +74,7 @@
       </property>
       <property name="maximumSize">
        <size>
-        <width>50</width>
+        <width>20</width>
         <height>300000</height>
        </size>
       </property>
@@ -91,7 +94,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>804</width>
+     <width>1000</width>
      <height>26</height>
     </rect>
    </property>
